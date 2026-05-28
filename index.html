@@ -63,24 +63,28 @@
       border-bottom: 1px solid rgba(0, 212, 255, 0.12);
     }
 
+    .hero-title-wrap {
+      position: relative;
+      display: inline-block;
+    }
+
     .corner-logo {
       position: absolute;
-      top: 5.5rem;
-      right: 2rem;
+      bottom: calc(100% + 1cm);
+      right: 0;
       text-decoration: none;
-      z-index: 2;
     }
 
     .corner-logo img {
-      height: 48px;
+      height: 44px;
       width: auto;
-      border-radius: 12px;
+      border-radius: 10px;
       transition: opacity 0.2s, transform 0.2s;
     }
 
     .corner-logo:hover img {
       opacity: 0.85;
-      transform: scale(1.07);
+      transform: scale(1.05);
     }
 
     nav a {
@@ -471,16 +475,18 @@
 
   <!-- HERO -->
   <section class="hero">
-    <a class="corner-logo" href="#"><img src="./assets/logo.jpg" alt="AzogCorp" /></a>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
 
     <span class="hero-eyebrow">Independent Game Studio</span>
 
-    <h1 class="hero-title">
-      <span class="azog">Azog</span><span class="corp">Corp</span>
-    </h1>
+    <div class="hero-title-wrap">
+      <a class="corner-logo" href="#"><img src="./assets/logo.jpg" alt="AzogCorp" /></a>
+      <h1 class="hero-title">
+        <span class="azog">Azog</span><span class="corp">Corp</span>
+      </h1>
+    </div>
 
     <p class="hero-sub">We build mobile games that are fun, weird, and a little bit electric.</p>
 

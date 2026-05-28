@@ -233,6 +233,23 @@
     /* ── ABOUT ── */
     .about { background: var(--bg2); }
 
+    .about-top {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-top-text { flex: 1; min-width: 0; }
+
+    .about-top-img {
+      flex-shrink: 0;
+      width: 460px;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
     .about-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -571,9 +588,14 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
-      <p class="section-label">Who we are</p>
-      <h2 class="section-title">Small team.<br/>Big ideas.</h2>
-      <p class="section-desc">AzogCorp is an indie mobile game studio focused on casual games with satisfying progression and unexpected depth.</p>
+      <div class="about-top">
+        <div class="about-top-text">
+          <p class="section-label">Who we are</p>
+          <h2 class="section-title">Small team.<br/>Big ideas.</h2>
+          <p class="section-desc">AzogCorp is an indie mobile game studio focused on casual games with satisfying progression and unexpected depth.</p>
+        </div>
+        <img class="about-top-img" src="./assets/hero-bg.jpg" alt="AzogCorp founding story" />
+      </div>
 
       <div class="about-grid">
         <div class="about-card">
